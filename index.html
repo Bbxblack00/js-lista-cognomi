@@ -24,15 +24,16 @@
 
   var surname = [];
   var i = 0;
-  while (i < 5) {
+  for (var i = 0; i < 5; i++) {
     var temp = prompt('inserisci il tuo cognome: ');
     surname.push(temp);
-    i++;
+    surname.sort();
   }
 
-  console.log(surname.sort());
-
-  document.getElementById('risultato')
+  for (var i = 0; i < 5; i++) {
+    temp = i;
+    console.log(++temp + ' ' + surname[i]);
+  }
 
 
   </script>
