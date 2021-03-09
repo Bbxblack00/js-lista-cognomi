@@ -22,17 +22,20 @@
   </body>
   <script type="text/javascript">
 
-  var surname = [];
-  var i = 0;
-  for (var i = 0; i < 5; i++) {
-    var temp = prompt('inserisci il tuo cognome: ');
-    surname.push(temp);
-    surname.sort();
-  }
+  var surname = ['Rossi', 'Bianchi', 'Verdi', 'Gialli'];
+  // var surname = [];
+  // for (var i = 0; i < 5; i++) {
+    // var temp = prompt('inserisci il tuo cognome: ');
+    // surname.push(temp);
+    // surname.sort();
+  // }
+
+  var userName = prompt('ínserisci il tuo cognome : ');
+  surname.push(userName);
+  surname.sort();
 
   for (var i = 0; i < 5; i++) {
-    temp = i;
-    console.log(++temp + ' ' + surname[i]);
+    console.log(i + 1 + ' ' + surname[i]);
   }
 
 
